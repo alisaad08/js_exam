@@ -110,7 +110,7 @@
     color: #FFCA42;
 }
 
-@media (min-width: 400px) and (max-width: 800px) {
+@media (min-width: 300px) and (max-width: 800px) {
     .forst {
         min-height: auto; 
         padding-bottom: 50px;
