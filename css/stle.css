@@ -120,23 +120,22 @@
         max-width: 95%;
         margin-left: auto;
         margin-right: auto;
-        /* flex-direction: column; Logotip va menyuni ustma-ust qo'yish */
         gap: 20px;
         padding-top: 20px;
     }
 
     .forst__header--ul {
-        margin-left: 0; /* Katta marginni olib tashlaymiz */
+        margin-left: 0; 
         gap: 15px;
         font-size: 16px;
-        flex-wrap: wrap; /* Menyu sig'masa pastga tushishi uchun */
+        flex-wrap: wrap; 
         justify-content: center;
     }
 
     .one {
         width: 95%;
         height: auto;
-        flex-direction: column; /* Rasm va matnni ustma-ust qo'yish */
+        flex-direction: column; 
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
@@ -147,16 +146,15 @@
         width: 100%;
         height: auto;
         margin-top: 30px;
-        text-align: center; /* Matnni markazga tekislash */
+        text-align: center; 
     }
 
-    /* Ijtimoiy tarmoq piktogrammalarini kichraytirish */
     .fa-facebook-f, .fa-twitter, .fa-instagram {
         font-size: 20px;
         padding: 4px;
     }
 
-    /* Asosiy rasm bo'lsa, uni konteynerga moslash */
+   
     .one img {
         max-width: 100%;
         height: auto;
