@@ -118,41 +118,42 @@
 
 }
 
-/* 400px va 800px oralig'idagi qurilmalar uchun */
+
 @media screen and (min-width: 400px) and (max-width: 800px) {
     
     .forst__header {
-        flex-direction: column; /* Logotip va menyuni ustma-ust qo'yish */
+        
         gap: 20px;
         padding: 20px;
     }
 
     .forst__header--ul {
-        flex-wrap: wrap; /* Menyular sig'masa pastga tushadi */
+       display: none;
+        flex-wrap: wrap; 
         justify-content: center;
-        font-size: 16px; /* Matnni biroz kichraytiramiz */
+        font-size: 16px; 
     }
 
     .four {
-        margin-left: 0; /* Katta marginni bekor qilamiz */
-        margin-top: 100px; /* Masofani moslaymiz */
-        padding: 0 20px; /* Yon tomondan bo'shliq */
-        text-align: center; /* Hammasini markazga tekislaymiz */
+        margin-left: 0; 
+        margin-top: 100px; 
+        padding: 0 20px; 
+        text-align: center;
     }
 
     .four__logo {
-        margin-right: 0; /* O'ng tomondagi surilishni bekor qilamiz */
-        font-size: 32px; /* Sarlavha hajmini kichraytiramiz */
+        margin-right: 0;
+        font-size: 32px; 
         width: 100%;
     }
 
     .four__paragref {
-        margin-left: 0; /* Manfiy marginni olib tashlaymiz */
+        margin-left: 0; 
         margin-top: 20px;
-        width: 100%; /* Konteyner kengligiga moslashadi */
+        width: 100%; 
         max-width: 100%; 
         font-size: 18px;
-        line-height: 1.5; /* O'qishga qulay bo'lishi uchun */
+        line-height: 1.5; 
     }
 
     .header__ul--btn {
@@ -368,7 +369,6 @@ width: 100%;
 
 .books-section {
     padding: 50px 5%;
-    /* Konteyner yo'qligi uchun padding foizda berildi */
     text-align: center;
 }
 
@@ -380,7 +380,6 @@ width: 100%;
     display: inline-block;
 }
 
-/* Rasmda ko'rsatilgan chiziqni imitatsiya qilish */
 .main-title::after {
     content: '';
     position: absolute;
@@ -395,7 +394,6 @@ width: 100%;
 .book-list {
     display: flex;
     flex-direction: column;
-    /* Default: Ustma-ust (400px dan 800px gacha ham shu holatda qoladi) */
     gap: 50px;
     align-items: center;
 }
@@ -474,17 +472,14 @@ width: 100%;
     color: #1B3764;
 }
 
-/* --- MEDIA QUERY (800px dan katta ekranlar uchun) --- */
 @media screen and (min-width: 800px) {
     .book-list {
         flex-direction: row;
-        /* 800px dan oshganda yonma-yon joylashish */
         justify-content: center;
     }
 
     .book-item {
         flex-direction: row;
-        /* Katta ekranda kontent va rasm yonma-yon turishi */
         text-align: left;
         align-items: flex-start;
         max-width: none;

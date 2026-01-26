@@ -135,11 +135,13 @@
     }
 
     .forst__header--ul {
-        margin-left: 0; 
+        display: none;
+        /* margin-left: 0; 
+    
         gap: 15px;
         font-size: 16px;
         flex-wrap: wrap; 
-        justify-content: center;
+        justify-content: center; */
     }
 
     .one {
