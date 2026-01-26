@@ -1,0 +1,695 @@
+/* font => inter */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* font => cardo */
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+
+/*  font => card0 */
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-shadow: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+} 
+
+.forst {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    min-height: 800px;
+    background-color: #1B3764;
+}
+
+.forst__header {
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.headetr__img {
+    margin-right: 10px;
+}
+
+.fa-facebook-f,
+.fa-telegram,
+.fa-instagram {
+    background-color: #ffff;
+    padding: 5px 5px;
+    font-size: 30px;
+}
+
+.fa-angle-down {
+    display: inline;
+}
+
+.forst__header--ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.ul__li {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 15px 15px;
+}
+
+.ul__li:hover {
+    color: #FFCA42;
+    background-color: #FFCA42;
+}
+
+.header__ul--btn {
+    max-width: 150px;
+    width: 100%;
+    background-color: #FFCA42;
+    padding: 10px 10px;
+    border: none;
+    font-family: "Cardo", serif;
+    cursor: pointer;
+}
+
+.header__ul--btn:hover {
+    color: black;
+    background-color: #FFFFFF;
+}
+
+.four {
+
+    margin-left: 550px;
+    margin-top: 250px;
+}
+
+.four__logo {
+    max-width: 100%;
+    font-size: 50px;
+    color: #ffff;
+    margin-right: 450px;
+}
+
+.four__paragref {
+    color: #B4C7E7;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: -450px;
+
+}
+
+/* 400px va 800px oralig'idagi qurilmalar uchun */
+@media screen and (min-width: 400px) and (max-width: 800px) {
+    
+    .forst__header {
+        flex-direction: column; /* Logotip va menyuni ustma-ust qo'yish */
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .forst__header--ul {
+        flex-wrap: wrap; /* Menyular sig'masa pastga tushadi */
+        justify-content: center;
+        font-size: 16px; /* Matnni biroz kichraytiramiz */
+    }
+
+    .four {
+        margin-left: 0; /* Katta marginni bekor qilamiz */
+        margin-top: 100px; /* Masofani moslaymiz */
+        padding: 0 20px; /* Yon tomondan bo'shliq */
+        text-align: center; /* Hammasini markazga tekislaymiz */
+    }
+
+    .four__logo {
+        margin-right: 0; /* O'ng tomondagi surilishni bekor qilamiz */
+        font-size: 32px; /* Sarlavha hajmini kichraytiramiz */
+        width: 100%;
+    }
+
+    .four__paragref {
+        margin-left: 0; /* Manfiy marginni olib tashlaymiz */
+        margin-top: 20px;
+        width: 100%; /* Konteyner kengligiga moslashadi */
+        max-width: 100%; 
+        font-size: 18px;
+        line-height: 1.5; /* O'qishga qulay bo'lishi uchun */
+    }
+
+    .header__ul--btn {
+        width: auto;
+        padding: 12px 25px;
+    }
+}
+
+
+
+
+
+.bio-section {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column
+}
+
+.image-wrapper img {
+width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+}
+
+
+.info-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.label {
+    font-weight: bold;
+    color: #555;
+    flex: 0 0 150px;
+}
+
+.value {
+    color: #333;
+}
+
+.social-icon {
+    font-size: 20px;
+    color: #1B3764;
+    margin-right: 5px;
+}
+
+.bio-title {
+    font-size: 28px;
+    color: #1B3764;
+    margin-bottom: 15px;
+}
+
+.bio-paragraph {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    background-color: #FFCA42;
+    color: #1B3764;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #e6b837;
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+    .bio-section {
+        flex-direction: column;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .info-sidebar {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .main-bio-text {
+        padding-left: 0;
+    }
+}
+
+
+
+
+.story-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 5%;
+    gap: 40px;
+}
+
+.story-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.story-image-wrapper {
+    flex: 1;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.author-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.story-title {
+    font-size: 36px;
+    color: #1B3764;
+    margin-bottom: 15px;
+}
+
+.story-intro {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.timeline-number {
+    width: 40px;
+    height: 40px;
+    background-color: #FFCA42;
+    color: #1B3764;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.award-title {
+    font-size: 16px;
+    color: #1B3764;
+    margin: 0 0 5px 0;
+}
+
+.award-description {
+    font-size: 12px;
+    color: #777;
+    margin: 0;
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+    .story-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 5%;
+    }
+
+    .story-content {
+        order: 2;
+        max-width: 100%;
+    }
+
+    .story-image-wrapper {
+        order: 1;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+.books-section {
+    padding: 50px 5%;
+    /* Konteyner yo'qligi uchun padding foizda berildi */
+    text-align: center;
+}
+
+.main-title {
+    font-size: 24px;
+    color: #1B3764;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Rasmda ko'rsatilgan chiziqni imitatsiya qilish */
+.main-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #FFCA42;
+}
+
+.book-list {
+    display: flex;
+    flex-direction: column;
+    /* Default: Ustma-ust (400px dan 800px gacha ham shu holatda qoladi) */
+    gap: 50px;
+    align-items: center;
+}
+
+.book-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+}
+
+.book-cover {
+    margin-bottom: 20px;
+}
+
+.book-details {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.book-title {
+    margin-top: 100px;
+}
+
+
+.design-atomic {
+    background-color: #1B3764;
+}
+
+.design-darklight {
+    background-color: #fff;
+    color: #1B3764;
+    border: 1px solid #ddd;
+}
+
+
+.book-title {
+    font-size: 20px;
+    color: #1B3764;
+    margin-bottom: 10px;
+}
+
+.book-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.book-meta {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #777;
+}
+
+.order-btn {
+    background-color: #FFCA42;
+    border: 1px solid #FFCA42;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #1B3764;
+    transition: background-color 0.3s;
+}
+
+.order-btn:hover {
+    background-color: transparent;
+    color: #1B3764;
+}
+
+/* --- MEDIA QUERY (800px dan katta ekranlar uchun) --- */
+@media screen and (min-width: 800px) {
+    .book-list {
+        flex-direction: row;
+        /* 800px dan oshganda yonma-yon joylashish */
+        justify-content: center;
+    }
+
+    .book-item {
+        flex-direction: row;
+        /* Katta ekranda kontent va rasm yonma-yon turishi */
+        text-align: left;
+        align-items: flex-start;
+        max-width: none;
+        padding: 30px;
+    }
+
+    .book-cover {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .book-details {
+        flex: 1;
+    }
+
+    .book-meta {
+        justify-content: flex-start;
+    }
+}
+
+
+
+
+.trusted-section {
+    padding: 80px 5px;
+    text-align: center;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.main-title {
+    font-size: 32px;
+    color: #1B3764;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.logo-item {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+/* Sarlavha ostidagi sariq chiziq */
+.main-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #FFCA42;
+}
+
+.logo-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+
+}
+
+.img__two {
+    font-size: 20px;
+    margin-left: -50px;
+    margin-top: 20px;
+}
+
+.logo-item {
+    flex: 1;
+    min-width: 200px;
+    max-width: 280px;
+    text-align: center;
+}
+
+.logo-placeholder {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+}
+
+.company-name {
+    font-size: 18px;
+    color: #1B3764;
+    margin-bottom: 10px;
+}
+
+.company-description {
+    font-size: 12px;
+    color: #777;
+    line-height: 1.4;
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+    .logo-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-item {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+
+
+
+.footer {
+    background-color: #1a4a7e;
+    color: #b0c4de;
+    padding: 40px 5%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.footer-column ul li::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #b0c4de;
+}
+
+.footer-column ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #163e68;
+    margin-right: 10px;
+    border: 1px solid #4a6f9a;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #4a6f9a;
+    font-size: 12px;
+}
+
+.footer-bottom a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media (min-width: 400px) and (max-width: 800px) {
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .footer-column {
+        min-width: unset;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer-content {
+        display: block;
+    }
+}

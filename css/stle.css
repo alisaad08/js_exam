@@ -9,7 +9,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
 
 
-
 * {
     margin: 0;
     padding: 0;
@@ -21,48 +20,38 @@
 
 .contener {
     max-width: 100%;
-    max-height: 100vh;
+    margin: 0 auto; 
 }
 
 .forst {
     max-width: 100%;
-    min-height: 1111px;
+    min-height: 1150px;
     background-color: #1B3764;
 }
 
 .forst__header {
     max-width: 1300px;
-    max-height: 55px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 50px;
-    margin-left: 140px;
-    /* margin-top: 50px; */
+
+    margin: 0 auto; 
 }
 
 .headetr__img {
     margin-right: 10px;
 }
 
-.fa-facebook-f {
-    background-color: #ffff;
-    padding: 5px 5px;
-    margin-right: 8px;
-    font-size: 30px;
-}
-
-.fa-twitter {
+.fa-facebook-f, .fa-telegram, .fa-instagram {
     background-color: #ffff;
     padding: 5px 5px;
     font-size: 30px;
 }
 
-.fa-instagram {
-    background-color: #ffff;
-    padding: 5px 5px;
-    margin-left: 10px;
-    font-size: 30px;
+.fa-angle-down {
+    display: inline;
 }
 
 .forst__header--ul {
@@ -70,34 +59,55 @@
     justify-content: space-between;
     align-items: center;
     gap: 25px;
-    margin-left: 380px;
     font-family: "Inter", sans-serif;
     font-size: 20px;
     color: #FFFFFF;
 }
 
+.ul__li {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 15px 15px;
+}
+
+.ul__li:hover {
+    color: #FFCA42;
+    background-color: #FFCA42;
+}
+
 .header__ul--btn {
     max-width: 150px;
-    max-height: 150px;
+    width: 100%;
     background-color: #FFCA42;
     padding: 10px 10px;
     border: none;
     font-family: "Cardo", serif;
+    cursor: pointer;
+}
 
+.header__ul--btn:hover {
+    color: black;
+    background-color: #FFFFFF;
 }
 
 .one {
-    width: 1300px;
-    height: 800px;
+    max-width: 1300px;
+    width: 100%;
+    height: auto; 
     display: flex;
+    flex-wrap: wrap;
     margin-top: 200px;
-    margin-left: 150px;
 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .second {
-    width: 615px;
-    height: 520px;
+    max-width: 615px; 
+    width: 100%;
+    height: auto;
     flex-direction: column;
     text-align: start;
     margin-top: 150px;
@@ -154,28 +164,31 @@
         padding: 4px;
     }
 
-   
     .one img {
         max-width: 100%;
         height: auto;
     }
 }
 
+
 .second__tetx {
     color: #FFFFFF;
     font-family: "Cardo", serif;
     font-size: 25px;
-    margin-left: 50px;
     font-family: initial;
     display: block;
+    padding: 0 10px;
 }
 
 .second__str {
-    width: 615px;
-    height: 145px;
+    max-width: 615px; 
+    width: 100%;
+    height: auto;  
     font-family: "Cardo", serif;
     font-size: 40px;
     color: #FFFFFF;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 .second__paragref {
@@ -183,26 +196,28 @@
     font-size: 12px;
     margin-top: 10px;
     color: #B4C7E7;
+    padding: 0 10px;
 }
 
 .second__btn {
     width: 220px;
     height: 65px;
-    border: 5px;
+    border: none; 
     font-size: 30px;
     background-color: #FFCA42;
     color: #1B3764;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .second__one {
     width: 250px;
     height: 65px;
-    border: 5px;
-    font-size: 30px;
     border: none;
+    font-size: 30px;
     background-color: #1B3764;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .second__btn:hover {
@@ -216,11 +231,14 @@
 }
 
 .second__div {
-    width: 580px;
-    height: 65px;
+    max-width: 580px;
+    width: 100%;
+    height: auto;
     gap: 30px;
     display: flex;
     margin-top: 33px;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .q {
@@ -232,8 +250,8 @@
 }
 
 .w {
-    width: 85px;
-    height: 30px;
+    width: auto; 
+    height: auto;
     font-family: "Cardo", serif;
     font-size: 25px;
     color: #FFFFFF;
@@ -241,45 +259,55 @@
 
 .two {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .two__ul {
-    display: flex;
-    width: 580px;
-    height: 65px;
+    max-width: 580px;
+    width: 100%;
+    height: auto;
     gap: 111px;
+    display: flex;
     font-family: "Cardo", serif;
     font-size: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
     color: #FFFFFF;
-    margin-left: 35px;
-    margin-top: -20px;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 .three {
-    width: 570px;
-    height: 780px;
+    max-width: 570px;
+    width: 100%;
+    height: auto;
     border: 12px solid whitesmoke;
-    margin-left: 100px;
+   margin-top: -50px;
     background-color: #FFFFFF;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .three__img {
-    margin-left: 30px;
+    margin-left: 30px; 
     margin-top: 20px;
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .three__tetx {
-    width: 480px;
-    height: 60px;
+    max-width: 480px;
+    width: 100%;
+    height: auto;
     font-size: 18px;
     margin-top: 15px;
     font-family: "Cardo", serif;
-
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 .divider {
@@ -288,7 +316,6 @@
     justify-content: center;
     margin-top: 30px;
     gap: 12px;
-
 }
 
 .divider .line {
@@ -309,8 +336,8 @@
     height: 165px;
     background-color: #FFCA42;
     box-shadow: 0 0 0 12px #ffe8a3;
-    margin-left: 300px;
-
+    margin-left: 300px; 
+  
 }
 
 .three__tettx {
@@ -328,31 +355,36 @@
 
 .p {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .four__img {
     margin-top: -120px;
-    margin-left: 30px;
+    max-width: 100%;
+    height: auto;
 }
 
 .paragref {
-    margin-right: 100px;
+margin-left: 50px;
     color: #1B3764;
     font-size: 20px;
     margin-top: 50px;
     font-family: "Inter", sans-serif;
+    padding: 0 10px;
 }
 
 .logo {
     color: #1B3764;
     font-size: 30px;
     margin-top: 10px;
+    margin-left: 150px;
 }
 
 .italic {
     color: #1B3764;
     font-size: 20px;
-    margin-top: 10px;
+   margin-top: -10px;
+   padding-top: -50px;
 }
 
 .text__five {
@@ -360,6 +392,7 @@
     justify-content: center;
     text-align: center;
     margin-top: 30px;
+    width: 100%;
 }
 
 .text__text {
@@ -367,6 +400,7 @@
     font-size: 45px;
     color: #1B3764;
 }
+
 
 .five {
     width: 100%;
@@ -535,7 +569,7 @@
         margin-left: auto;
         margin-right: auto;
         height: auto;
-        padding-bottom: 30px;
+        margin-top: 50px;
     }
 
     .three__border {
@@ -547,6 +581,9 @@
     .three__tetx {
         width: 90%;
         margin: 15px auto;
+    }
+    .four__img{
+        margin-left: 10px;
     }
 
     .five__two, .five__four {
