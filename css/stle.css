@@ -20,7 +20,7 @@
 
 .contener {
     max-width: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .forst {
@@ -37,14 +37,16 @@
     align-items: center;
     padding-top: 50px;
 
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .headetr__img {
     margin-right: 10px;
 }
 
-.fa-facebook-f, .fa-telegram, .fa-instagram {
+.fa-facebook-f,
+.fa-telegram,
+.fa-instagram {
     background-color: #ffff;
     padding: 5px 5px;
     font-size: 30px;
@@ -93,7 +95,7 @@
 .one {
     max-width: 1300px;
     width: 100%;
-    height: auto; 
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     margin-top: 200px;
@@ -105,7 +107,7 @@
 }
 
 .second {
-    max-width: 615px; 
+    max-width: 615px;
     width: 100%;
     height: auto;
     flex-direction: column;
@@ -122,7 +124,7 @@
 
 @media (min-width: 300px) and (max-width: 800px) {
     .forst {
-        min-height: auto; 
+        min-height: auto;
         padding-bottom: 50px;
     }
 
@@ -136,18 +138,12 @@
 
     .forst__header--ul {
         display: none;
-        /* margin-left: 0; 
-    
-        gap: 15px;
-        font-size: 16px;
-        flex-wrap: wrap; 
-        justify-content: center; */
     }
 
     .one {
         width: 95%;
         height: auto;
-        flex-direction: column; 
+        flex-direction: column;
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
@@ -158,10 +154,12 @@
         width: 100%;
         height: auto;
         margin-top: 30px;
-        text-align: center; 
+        text-align: center;
     }
 
-    .fa-facebook-f, .fa-twitter, .fa-instagram {
+    .fa-facebook-f,
+    .fa-twitter,
+    .fa-instagram {
         font-size: 20px;
         padding: 4px;
     }
@@ -183,9 +181,9 @@
 }
 
 .second__str {
-    max-width: 615px; 
+    max-width: 615px;
     width: 100%;
-    height: auto;  
+    height: auto;
     font-family: "Cardo", serif;
     font-size: 40px;
     color: #FFFFFF;
@@ -204,7 +202,7 @@
 .second__btn {
     width: 220px;
     height: 65px;
-    border: none; 
+    border: none;
     font-size: 30px;
     background-color: #FFCA42;
     color: #1B3764;
@@ -252,7 +250,7 @@
 }
 
 .w {
-    width: auto; 
+    width: auto;
     height: auto;
     font-family: "Cardo", serif;
     font-size: 25px;
@@ -272,8 +270,8 @@
     display: flex;
     font-family: "Cardo", serif;
     font-size: 15px;
-  margin-left: 20px;
-  margin-top: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
     color: #FFFFFF;
     box-sizing: border-box;
     padding: 0 10px;
@@ -284,7 +282,7 @@
     width: 100%;
     height: auto;
     border: 12px solid whitesmoke;
-   margin-top: -50px;
+    margin-top: -50px;
     background-color: #FFFFFF;
     flex-direction: column;
     justify-content: center;
@@ -294,7 +292,7 @@
 }
 
 .three__img {
-    margin-left: 30px; 
+    margin-left: 30px;
     margin-top: 20px;
     display: block;
     max-width: 100%;
@@ -338,8 +336,8 @@
     height: 165px;
     background-color: #FFCA42;
     box-shadow: 0 0 0 12px #ffe8a3;
-    margin-left: 300px; 
-  
+    margin-left: 300px;
+
 }
 
 .three__tettx {
@@ -367,7 +365,7 @@
 }
 
 .paragref {
-margin-left: 50px;
+    margin-left: 50px;
     color: #1B3764;
     font-size: 20px;
     margin-top: 50px;
@@ -385,8 +383,8 @@ margin-left: 50px;
 .italic {
     color: #1B3764;
     font-size: 20px;
-   margin-top: -10px;
-   padding-top: -50px;
+    margin-top: -10px;
+    padding-top: -50px;
 }
 
 .text__five {
@@ -546,9 +544,10 @@ margin-left: 50px;
 
 
 @media screen and (max-width: 1000px) {
-    
-    .five, .six {
-        flex-direction: column; 
+
+    .five,
+    .six {
+        flex-direction: column;
         height: auto;
         padding: 40px 20px;
         gap: 40px;
@@ -584,11 +583,13 @@ margin-left: 50px;
         width: 90%;
         margin: 15px auto;
     }
-    .four__img{
+
+    .four__img {
         margin-left: 10px;
     }
 
-    .five__two, .five__four {
+    .five__two,
+    .five__four {
         margin-top: 0;
         width: 100%;
         align-items: center;
@@ -621,17 +622,19 @@ margin-left: 50px;
         width: 100%;
         justify-content: center;
         gap: 30px;
-     
+
     }
 
     .h {
-        display: none; 
+        display: none;
     }
-    .s{
+
+    .s {
         gap: 80px;
     }
 
-    .four__img, .three__img {
+    .four__img,
+    .three__img {
         width: 100%;
         max-width: 400px;
         height: auto;
@@ -654,12 +657,15 @@ margin-left: 50px;
 }
 
 @media screen and (max-width: 480px) {
-    .second__btn, .second__one {
+
+    .second__btn,
+    .second__one {
         width: 100%;
         font-size: 20px;
     }
 
-    .two__tetx, .text__text {
+    .two__tetx,
+    .text__text {
         font-size: 28px;
     }
 
